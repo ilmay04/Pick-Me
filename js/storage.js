@@ -84,6 +84,10 @@ const PM = {
   setCurrentLook(look) { PM.write(PM.keys.current, look); },
 };
 
+/* Expose on window: top-level `const` is a lexical global and is NOT a
+   property of window, so scripts referencing `window.PM` need this. */
+window.PM = PM;
+
 /* Simple toast helper */
 function pmToast(msg) {
   let el = document.querySelector(".toast");
