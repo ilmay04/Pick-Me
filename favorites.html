@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites | Pick Me</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body data-page="favorites">
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="frontend.html"><span class="brand-mark">PM</span><span>Pick Me</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" data-nav-toggle><span></span><span></span><span></span></button>
+      <div class="nav-menu" data-nav-menu>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="recent.html">Recently Viewed</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon>Dark</span></button>
+      </div>
+    </nav>
+  </header>
+  <main class="section-pad">
+    <section class="shell page-fade">
+      <div class="section-heading">
+        <p class="eyebrow">Saved Looks</p>
+        <h1>Your favorites</h1>
+      </div>
+      <div class="saved-grid" data-favorites-grid></div>
+    </section>
+  </main>
+</body>
+</html>

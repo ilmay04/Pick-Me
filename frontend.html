@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pick Me | Personalized Fashion Recommendations</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="frontend.html" aria-label="Pick Me home">
+        <span class="brand-mark">PM</span>
+        <span>Pick Me</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" data-nav-menu>
+        <a href="frontend.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="recent.html">Recently Viewed</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">
+          <span data-theme-icon>Dark</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy page-fade">
+          <p class="eyebrow">Personal styling, tuned to you</p>
+          <h1>Pick Me</h1>
+          <p class="hero-text">A dynamic fashion recommendation studio that reads your profile, occasion, budget, and style signals to build complete looks in seconds.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="auth.html">Get Started</a>
+            <a class="btn btn-ghost" href="#features">Explore Features</a>
+          </div>
+        </div>
+        <div class="lookbook glass page-fade" aria-label="Featured fashion preview">
+          <div class="lookbook-top">
+            <span>Tonight's Edit</span>
+            <strong>Elegant</strong>
+          </div>
+          <div class="fabric-stack">
+            <span class="fabric fabric-rose"></span>
+            <span class="fabric fabric-green"></span>
+            <span class="fabric fabric-cream"></span>
+          </div>
+          <div class="mini-reco">
+            <span>Silk wrap dress</span>
+            <span>Rose-gold hoops</span>
+            <span>Soft wave hair</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="about">
+      <div class="shell section-split">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Style decisions with context.</h2>
+        </div>
+        <p class="section-copy">Pick Me combines profile details, body type, skin tone, occasion, and budget to suggest complete outfits with accessory, footwear, makeup, hair, and color guidance. It remembers what you love, what you recently viewed, and keeps the experience personal across reloads.</p>
+      </div>
+    </section>
+
+    <section class="section-pad features-band" id="features">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Features</p>
+          <h2>A full look, not just an outfit.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="glass feature-card">
+            <span class="feature-icon">01</span>
+            <h3>Profile-aware engine</h3>
+            <p>Recommendations adapt to gender, body type, skin tone, occasion, and budget tier.</p>
+          </article>
+          <article class="glass feature-card">
+            <span class="feature-icon">02</span>
+            <h3>Smart warnings</h3>
+            <p>Dynamic styling alerts flag risky pairings before you commit to a look.</p>
+          </article>
+          <article class="glass feature-card">
+            <span class="feature-icon">03</span>
+            <h3>Persistent wardrobe memory</h3>
+            <p>Favorites and recently viewed looks are stored locally for seamless revisits.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <strong>Pick Me</strong>
+      <span>Personalized fashion recommendations with a polished point of view.</span>
+    </div>
+  </footer>
+</body>
+</html>

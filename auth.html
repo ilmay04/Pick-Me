@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | Pick Me</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <script defer src="js/app.js"></script>
+</head>
+<body data-page="auth">
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="frontend.html"><span class="brand-mark">PM</span><span>Pick Me</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" data-nav-toggle><span></span><span></span><span></span></button>
+      <div class="nav-menu" data-nav-menu>
+        <a href="frontend.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="favorites.html">Favorites</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon>Dark</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="auth-page section-pad">
+    <section class="shell auth-grid page-fade">
+      <div class="auth-copy">
+        <p class="eyebrow">Account Creation</p>
+        <h1>Build a style profile that remembers you.</h1>
+        <p>Tell Pick Me who you are so the dashboard can generate personalized, budget-aware fashion edits.</p>
+      </div>
+      <form class="glass form-card" data-auth-form novalidate>
+        <div class="form-header">
+          <h2>Create your account</h2>
+          <p>All data is saved in your browser with localStorage.</p>
+        </div>
+        <label>Name<input name="name" type="text" autocomplete="name" required minlength="2"></label>
+        <label>Username<input name="username" type="text" autocomplete="username" required minlength="3"></label>
+        <label>Gender
+          <select name="gender" required>
+            <option value="">Select gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Non-binary</option>
+          </select>
+        </label>
+        <label>Status Profile
+          <select name="status" required>
+            <option value="">Select status</option>
+            <option>Student</option>
+            <option>Working Professional</option>
+          </select>
+        </label>
+        <label>Identity Type
+          <select name="identity" required>
+            <option value="">Select identity</option>
+            <option>Influencer</option>
+            <option>Regular User</option>
+          </select>
+        </label>
+        <p class="form-error" data-form-error role="alert"></p>
+        <button class="btn btn-primary btn-full" type="submit">Continue to Profile</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
