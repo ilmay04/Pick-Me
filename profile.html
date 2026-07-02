@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pick Me · Your Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Pick<span class="dot">Me</span></a>
+      <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <a href="recent.html">Recent Looks</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="#" data-logout>Logout</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon>🌙</span></button>
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page container">
+    <div class="page-head">
+      <h1>Hi <span data-user-name>there</span> 👋</h1>
+      <p>Tell us about your style preferences so the engine can pick the perfect look for you.</p>
+    </div>
+
+    <div class="profile-layout">
+      <!-- Account summary -->
+      <aside class="card profile-summary">
+        <div class="avatar-picker">
+          <div class="avatar" id="avatar">🧑</div>
+          <div class="avatar-options" id="avatarOptions">
+            <span data-a="🧑">🧑</span><span data-a="👩">👩</span><span data-a="🧔">🧔</span>
+            <span data-a="👩‍🦱">👩‍🦱</span><span data-a="🧑‍🎤">🧑‍🎤</span><span data-a="👸">👸</span>
+          </div>
+        </div>
+        <h3 data-user-name>Your Name</h3>
+        <p class="muted" id="sumUsername">@username</p>
+        <ul class="summary-meta">
+          <li><span>Gender</span><strong id="sumGender">—</strong></li>
+          <li><span>Status</span><strong id="sumStatus">—</strong></li>
+          <li><span>Identity</span><strong id="sumIdentity">—</strong></li>
+        </ul>
+      </aside>
+
+      <!-- Preference form -->
+      <form id="prefForm" class="card profile-form">
+        <div class="step-progress"><div id="stepBar"></div></div>
+
+        <div class="field">
+          <label>Gender</label>
+          <div class="chips" data-single data-key="gender" id="pGender"></div>
+        </div>
+        <div class="field">
+          <label>Body Type</label>
+          <div class="chips" data-single data-key="bodyType" id="pBody"></div>
+        </div>
+        <div class="field">
+          <label>Skin Tone</label>
+          <div class="chips" data-single data-key="skinTone" id="pSkin"></div>
+        </div>
+        <div class="field">
+          <label>Occasion</label>
+          <div class="chips" data-single data-key="occasion" id="pOccasion"></div>
+        </div>
+        <div class="field">
+          <label>Budget Tier</label>
+          <div class="chips" data-single data-key="budget" id="pBudget"></div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block mt-2">Save &amp; Generate My Look →</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

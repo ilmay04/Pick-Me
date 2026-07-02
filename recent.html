@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pick Me · Recent Looks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Pick<span class="dot">Me</span></a>
+      <nav class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <a href="recent.html">Recent Looks</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="#" data-logout>Logout</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"><span data-theme-icon>🌙</span></button>
+        <button class="nav-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page container">
+    <div class="page-head" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <div>
+        <h1>Recent Looks</h1>
+        <p>The last dozen looks the engine generated for you.</p>
+      </div>
+      <button class="btn btn-ghost" id="clearRecent">🗑 Clear history</button>
+    </div>
+    <div class="look-grid" id="recentGrid"></div>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/looks.js"></script>
+  <script src="js/recent.js"></script>
+</body>
+</html>
